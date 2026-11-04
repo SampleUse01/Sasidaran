@@ -34,7 +34,7 @@ export default function DashboardPage() {
         <div className="sidebar-section-label">WORKSPACE</div>
         <div className="sidebar-link active"><span aria-hidden="true">◫</span> Overview</div>
         <Link className="sidebar-link" to="/attendance"><span aria-hidden="true">◷</span> {user?.role === 'user' ? 'My attendance' : 'Attendance'}</Link>
-        {(user?.role === 'admin' || user?.role === 'superadmin') && (
+        {(user?.role === 'superadmin') && (
           <Link className="sidebar-link management-sidebar-link" to="/manage"><span aria-hidden="true">⚙</span> Management</Link>
         )}
         <div className="sidebar-section-label account-label">ACCOUNT</div>

@@ -26,7 +26,7 @@ function AppRoutes() {
         <Route path="/" element={<DashboardPage />} />
         <Route path="/attendance" element={<AttendancePage />} />
       </Route>
-      <Route element={<ProtectedRoute allowedRoles={['admin', 'superadmin']} />}>
+      <Route element={<ProtectedRoute allowedRoles={['superadmin']} />}>
         <Route path="/manage" element={<AdminManagementPage />} />
       </Route>
       <Route path="/forbidden" element={<ForbiddenPage />} />
